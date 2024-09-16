@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+
+</head>
+<body>
+    <header>
+    <div class="medium" >
+        <div class="medium-top">
+            <img src="data:image/png;base64,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" alt="medium immagine">
+            <div class="box-search">
+                <div class="input-group">
+                    <span class="input-group-text">
+                         <input type="text" placeholder="search">
+                    </span>
+                    <div class="write">
+                    <ul>
+                        <li><span> <i class="fa-regular fa-pen-to-square"></i> write</span></li>
+                        <li><span><i class="fa-solid fa-bell"></i> </span></li>
+                        <li> <span><i class="fa-solid fa-circle-user"></i></span></li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    </header>
+    <main >
+        <div class="central" style="margin-left: 280px;">
+            <img src="star.svg" alt="star">
+        </div>
+        <p>
+            <span class="become-a-member" >
+                 Get unlimited access to the best of Medium for less then $1/week. 
+            </span>
+            <div class="member"> <a href="https://medium.com/plans"> Become a member</a>
+            </div>
+        </p>
+    </main>
+    <div class="menu" style="position: sticky;top: 0;">
+        <span> <img src="icons8-più-24.png" alt="plus"></span>
+        <span class="text"> For you</span>
+        <span class="text">Following</span>
+        <span class="text">Writing</span>
+        <span class="text">DataSience</span>
+        <span class="text">Programming</span>
+    </div>
+    <div class="container">
+        <div class="containers-items">
+    <div class="article-1">
+        <div class="sub-article">
+            <img src="icons8-utente-24.png" alt="star">
+            <span> Bryan Ye in Better Humans </span>
+            <h1>How To Wake Up at A.M.Every Day</h1>
+            <h4>An unconventional and compassionate guide to becoming an <br> early bird </h4>
+            <div class="boxes">
+                <img src="star.svg" alt="star">
+                <span style="margin-right: 15px">september 27,2021</span>
+                <i class="fa-regular fa-hand"></i>
+                <span style="margin-right: 15px;">60K</span>
+                <i class="fa-regular fa-comment"></i>
+                <span>150</span>
+                <i class="fa-solid fa-circle-minus" style="margin-left: 130px;"></i>
+         <i class="fa-solid fa-bookmark"></i>
+         <i class="fa-solid fa-ellipsis"></i>
+            </div>
+
+        </div>
+            <div class="images" style="margin-left: 80px">
+                <img src="https://st3.depositphotos.com/12640654/31917/i/950/depositphotos_319176902-stock-photo-cup-of-coffee-on-cafe.jpg" alt="immagine" style="width: 150px;height: 150px;">
+            </div>
+        
+    </div>
+    <div class="article-1">
+        <div class="sub-article">
+            <img src="icons8-utente-24.png" alt="star">
+            <span>Luka Bonisch</span>
+            <h1>Don't Take Life So Seriusly, It Doesn't Take <br> You Seriusly Either</h1>
+            <h4>Taking life seriusly is goofy.</h4>
+            <div class="boxes">
+                <img src="star.svg" alt="star">
+                <span style="margin-right: 15px">november 12,2023</span>
+                <i class="fa-regular fa-hand"></i>
+                <span style="margin-right: 15px;">200K</span>
+                <i class="fa-regular fa-comment"></i>
+                <span>350</span>
+                <i class="fa-solid fa-circle-minus" style="margin-left: 170px;"></i>
+                <i class="fa-solid fa-bookmark"></i>
+                <i class="fa-solid fa-ellipsis"></i>
+            </div>
+        
+        </div>
+        <div class="images" > 
+            <img src="https://www.arredoingiardino.it/giardinaggio/prato/prato-verde_NG1.jpg" alt="prato" style="width: 150px;height: 150px;">
+        </div>
+    </div>
+    
+    <div class="article-1">
+        <div class="sub-article">
+        <img src="icons8-utente-24.png" alt="star"> 
+        <span>David B.Clear in The Writing Cooperative</span>
+        <h1> On the Benefits of Keeping a Proise Book as<br> a Writer</h1>
+        <h4>When your motivation is in the gutter, you'll need it</h4>
+        <div class="boxes">
+         <img src="star.svg" alt="star">
+         <span style="margin-right: 15px">september 23,2022</span>
+         <i class="fa-regular fa-hand"></i>
+         <span style="margin-right: 15px;">50K</span>
+         <i class="fa-regular fa-comment"></i>
+         <span>400</span>
+         <i class="fa-solid fa-circle-minus" style="margin-left: 170px;"></i>
+         <i class="fa-solid fa-bookmark"></i>
+         <i class="fa-solid fa-ellipsis"></i>
+        </div>
+        </div>
+        <div class="images">
+            <img src="https://t4.ftcdn.net/jpg/02/25/94/77/360_F_225947759_pmDnMV6kaAzKBIAel4o6s4eqN76D6nim.jpg" alt="montagna" style="width: 150px;height: 150px;">
+        </div>
+    </div>
+    <div class="article-1">
+        <div class="sub-article">
+            <img src="icons8-utente-24.png" alt="star"> 
+            <span>Marc Barham in Counter Arts</span>
+            <h1> 'Antony and Cleopatra':Life Imitating Art Or<br> Art Imitating Life?</h1>
+            <h4>Love will tear us apart</h4>
+            <div class="boxes">
+             <img src="star.svg" alt="star">
+             <span style="margin-right: 15px">8d ago</span>
+             <i class="fa-regular fa-hand"></i>
+             <span style="margin-right: 15px;">55K</span>
+             <i class="fa-regular fa-comment"></i>
+             <span>179</span>
+             <i class="fa-solid fa-circle-minus" style="margin-left: 170px;"></i>
+             <i class="fa-solid fa-bookmark"></i>
+             <i class="fa-solid fa-ellipsis"></i>
+            </div>
+            </div>
+            <div class="images">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMnMWjZM1wLRpZgBsZ6EM4h_EcNDriHUT2Hw&s" alt="montagna" style="width: 150px;height: 150px;">
+            </div> 
+    </div>
+    <div class="article-1">
+        <div class="sub-article">
+            <img src="icons8-utente-24.png" alt="star"> 
+            <span>Pidding Piddles in Prism & Pen</span>
+            <h1>Crossing the Intersection of the Lost Trans<br>and Queer childhood</h1>
+            <h4>Dismantling the traffic jam of grief to move forward</h4>
+            <div class="boxes">
+             <img src="star.svg" alt="star">
+             <span style="margin-right: 15px">december 25,2019</span>
+             <i class="fa-regular fa-hand"></i>
+             <span style="margin-right: 15px;">600K</span>
+             <i class="fa-regular fa-comment"></i>
+             <span>20</span>
+             <i class="fa-solid fa-circle-minus" style="margin-left: 170px;"></i>
+             <i class="fa-solid fa-bookmark"></i>
+             <i class="fa-solid fa-ellipsis"></i>
+            </div>
+            </div>
+            <div class="images">
+                <img src="https://giovanimprenditori.org/wp-content/uploads/2022/07/QI_SPACE-scaled.jpg" alt="montagna" style="width: 150px;height: 150px;">
+            </div>
+    </div>
+    <div class="article-1">
+        <div class="sub-article">
+            <img src="icons8-utente-24.png" alt="star"> 
+            <span>Paul Walker in Backyard Church</span>
+            <h1> How bible Study and a Stranger's Prayer<br>Led Me to Become a Priest</h1>
+            <h4>My Surprising Jurney From Lab Assistant to Bible College</h4>
+            <div class="boxes">
+             <img src="star.svg" alt="star">
+             <span style="margin-right: 15px">september 5,2021</span>
+             <i class="fa-regular fa-hand"></i>
+             <span style="margin-right: 15px;">85K</span>
+             <i class="fa-regular fa-comment"></i>
+             <span>89</span>
+             <i class="fa-solid fa-circle-minus" style="margin-left: 170px;"></i>
+             <i class="fa-solid fa-bookmark"></i>
+             <i class="fa-solid fa-ellipsis"></i>
+            </div>
+            </div>
+            <div class="images">
+                <img src="https://media.tio.ch/files/domains/tio.ch/images/4by1/f_-funivia-morti-cabina-teleferica-incidenti-funivie-pb06.jpg?v=1" alt="montagna" style="width: 150px;height: 150px;">
+            </div>
+    </div>
+    </div>
+    
+    <div class="containers-items2">
+        <div class=" div-right">
+    <div class="right-box">
+        <div class="title">
+        <span> staff picks</span>
+        </div>
+        <div class="paragrafo">
+        <img src="icons8-utente-24.png" alt="immagine">
+        <span> f.perry wilson, MD MSCE</span> 
+        <h3> Guns and Kids: What is "resposable<br> Gun Ownership"?</h3>
+        </div>
+        <div class="paragrafo">
+            <img src="icons8-utente-24.png" alt="immagine">
+            <span> Rochelle Deans</span>
+            <h3>The rise an fall of nanowrimo</h3>
+        </div>
+        <div class="paragrafo">
+            <img src="icons8-utente-24.png" alt="immagine">
+            <span> The medium newsletter in the medium blog</span>
+            <h3> can AI make art?</h3>
+            </div>
+            <div class="links">
+            <a href="https://medium.com/@MediumStaff/list/staff-picks-c7bc6e1ee00f">see the full list</a>
+            </div>
+
+        </div>
+        <div class="paragrafo">
+            <h3> Recommended topics</h3>
+
+        </div>
+        <div class="buttons">
+            <button class="space-button"> <a href="https://medium.com/">Design</a> </button>
+            <button class="space-button"> <a href="https://medium.com/"> JavaScript</a> </button> <br>
+            <button class="space-button"> <a href="https://medium.com/">Culture</a></button>
+            <button class="space-button"> <a href="https://medium.com/">Coding</a></button>
+            <button class="space-button"> <a href="https://medium.com/">Blockchain</a></button> <br>
+            <button class="space-button"> <a href="https://medium.com/">Artificial Intelligence</a></button>
+            <button class="space-button"><a href="https://medium.com/">Entrepreneurship</a></button>
+
+        </div>
+        <div class="title-who">
+            <span> Who to follow</span>
+
+        </div>
+        <div class="paragrafo">
+            <img src="user-green.png" alt="immagine">
+            <span>Christopher Tao</span>
+            <button class="follow"> Follow</button>
+        </div>
+        <div class="paragrafo">
+            <img src="user-blue.png" alt="immagine">
+            <span> Write A Catalyst</span>
+            <button class="follow">Follow</button>
+        </div>
+        <div class="paragrafo">
+            <img src="user-pink.png" alt="immagine">
+            <span> Remi</span>
+            <button class="remi"> Follow</button>
+        </div>
+        <div class="paragrafo">
+            <img src="user-yellow.png" alt="immagine">
+            <span>Susan Smith</span>
+            <button class="susan">Follow</button>
+        </div>
+
+        
+        
+
+    </div>
+    </div>
+    </div>
+    </div>
+    
+
+
+      
+    
+    
+    
+</body>
+</html>
